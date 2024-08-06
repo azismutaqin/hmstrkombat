@@ -190,31 +190,3 @@ select option {
     color: #d1a3ff;
     font-weight: bold;
 }
-
-.footer-button {
-    margin-top: 20px;
-    background-color: #6a0080;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-align: center;
-}
-
-.language-selector {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-#languageSelect {
-    background-color: #4b006e;
-    color: #e0b3ff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    font-size: large;
-}
-
