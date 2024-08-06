@@ -39,58 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-async function loadTranslations(language) {
-    try {
-        const response = await fetch(`locales/${language}.json`);
-        if (!response.ok) {
-            throw new Error(`Failed to load translations: ${response.statusText}`);
-        }
-        return await response.json();
-    } catch (error) {
-        console.error('Error loading translations:', error);
-        alert('Failed to load translations. Check the console for details.');
-        throw error;
-    }
-}
-
-async function getTranslation(key) {
-    const translations = await loadTranslations(currentLanguage);
-    return translations[key] || key;
-}
-
-function applyTranslations(translations) {
-    document.querySelector('h1').innerText = translations.title;
-    document.getElementById('keyCountLabel').innerText = keygenActive
-        ? translations.selectKeyCountLabel_selected + document.getElementById('keyCountSelect').value
-        : translations.selectKeyCountLabel;
-    document.getElementById('startBtn').innerText = translations.generateButton;
-    document.getElementById('generatedKeysTitle').innerText = translations.generatedKeysTitle;
-    document.getElementById('creatorChannelBtn').innerText = translations.footerButton;
-    document.getElementById('copyAllBtn').innerText = translations.copyAllKeysButton;
-    document.getElementById('gameSelectLabel').innerText = translations.selectGameLabel;
-
-    document.querySelectorAll('.copyKeyBtn').forEach(button => {
-        button.innerText = translations.copyKeyButton || 'Copy Key';
-    });
-}
-
-async function switchLanguage(language) {
-    try {
-        const translations = await loadTranslations(language);
-        applyTranslations(translations);
-        currentLanguage = language;
-        localStorage.setItem('language', language);
-        languageSelect.value = language;
-    } catch (error) {
-        console.error('Error switching language:', error);
-    }
-}
-
-languageSelect.addEventListener('change', () => {
-    const newLanguage = languageSelect.value;
-    switchLanguage(newLanguage);
-});
-
 document.getElementById('startBtn').addEventListener('click', async () => {
     const startBtn = document.getElementById('startBtn');
     const keyCountSelect = document.getElementById('keyCountSelect');
