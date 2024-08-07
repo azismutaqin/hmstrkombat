@@ -144,21 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
         startBtn.disabled = false;
     });
 
-    document.getElementById('generateMoreBtn').addEventListener('click', () => {
-        progressContainer.classList.add('hidden');
-        keyContainer.classList.add('hidden');
-        startBtn.classList.remove('hidden');
-        keyCountSelect.classList.remove('hidden');
-        gameSelect.classList.remove('hidden');
-        generatedKeysTitle.classList.add('hidden');
-        copyAllBtn.classList.add('hidden');
-        keysList.innerHTML = '';
-        keyCountLabel.innerText = 'Number of keys:';
-    });
-
-    document.getElementById('creatorChannelBtn').addEventListener('click', () => {
-        window.open('https://telegram.me/Sam_Dm_bot', '_blank');
-    });
 
     telegramChannelBtn.addEventListener('click', () => {
         window.open('https://telegram.me/Insta_Buy_Follower', '_blank');
