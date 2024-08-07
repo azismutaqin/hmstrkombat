@@ -155,14 +155,6 @@ document.addEventListener('DOMContentLoaded', () => {
         keyCountLabel.innerText = 'Number of keys:';
     });
 
-    document.getElementById('creatorChannelBtn').addEventListener('click', () => {
-        window.open('https://telegram.me/Sam_Dm_bot', '_blank');
-    });
-
-    telegramChannelBtn.addEventListener('click', () => {
-        window.open('https://telegram.me/Insta_Buy_Follower', '_blank');
-    });
-
     const generateClientId = () => {
         const timestamp = Date.now();
         const randomNumbers = Array.from({ length: 19 }, () => Math.floor(Math.random() * 10)).join('');
