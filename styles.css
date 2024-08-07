@@ -108,11 +108,6 @@ button:hover {
     background-color: #218838;
 }
 
-.footer {
-    margin-top: 20px;
-    font-size: 14px;
-}
-
 #copyStatus {
     margin-top: 10px;
     color: green;
