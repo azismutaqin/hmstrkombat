@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const generatedKeysTitle = document.getElementById('generatedKeysTitle');
     const gameSelect = document.getElementById('gameSelect');
     const copyStatus = document.getElementById('copyStatus');
-    const telegramChannelBtn = document.getElementById('telegramChannelBtn');
 
     startBtn.addEventListener('click', async () => {
         const gameChoice = parseInt(gameSelect.value);
