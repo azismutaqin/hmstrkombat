@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamster Key Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:powderblue;">
+    <div class="container">
+        <h1>Hamster Key Generator</h1>
+        <div class="form-group">
+            <label for="gameSelect">Select Game:</label>
+            <select id="gameSelect">
+                <option value="3">My Clone Army</option>
+                <option value="2">Chain Cube 2048</option>
+                <option value="4">Train Miner</option>
+                <option value="1">Riding Extreme 3D</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="keyCountSelect">Select Number of Keys:</label>
+            <select id="keyCountSelect">
+                <option value="4">4</option>
+                <option value="12">12</option>
+            </select>
+        </div>
+        <button id="startBtn">Generate Keys</button>
+
+        <div id="progressContainer" class="hidden">
+            <div class="progress-bar">
+                <div id="progressBar"></div>
+            </div>
+            <p id="progressText">0%</p>
+            <p id="progressLog">Starting...</p>
+        </div>
+
+        <div id="keyContainer" class="hidden">
+            <h2 id="generatedKeysTitle" class="hidden">Generated Keys</h2>
+            <div id="keysList"></div>
+            <button id="copyAllBtn" class="hidden">Copy All Keys</button>
+        </div>
+
+        <p id="keyCountLabel">Number of keys:</p>
+
+        <button id="generateMoreBtn">Generate More Keys</button>
+        <button id="creatorChannelBtn">Contact Creator</button>
+        <p id="copyStatus" class="hidden">Keys copied to clipboard!</p>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
