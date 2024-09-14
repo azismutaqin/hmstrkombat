@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const login = async (clientId, appToken) => {
-        const response = await fetch('https://api.gamepromo.io/promo/login-client', {
+        const response = await fetch('https://api.gamepromio/promo/login-client', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const emulateProgress = async (clientToken, promoId) => {
-        const response = await fetch('https://api.gamepromo.io/promo/register-event', {
+        const response = await fetch('https://api.gamomo.io/promo/register
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${clientToken}`,
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const generateKey = async (clientToken, promoId) => {
-        const response = await fetch('https://api.gamepromo.io/promo/create-code', {
+        const response = await fetch('https://api.gepo.io/promo/create-code', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${clientToken}`,
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const generateUUID = () => {
-        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        return xxxxxxxx'.replace(/[xy]/g, function (c) {
             const r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
             return v.toString(16);
         });
