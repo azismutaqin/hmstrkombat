@@ -1,0 +1,7 @@
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=400000,NAME="low"
+https://op-group1-swiftservehd-1.dens.tv/h/h10/02.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=800000,NAME="med"
+https://op-group1-swiftservehd-1.dens.tv/h/h10/02.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1900000,NAME="best"
+https://op-group1-swiftservehd-1.dens.tv/h/h10/02.m3u8
